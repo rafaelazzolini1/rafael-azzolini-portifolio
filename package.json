@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "1.0.0",
   "private": true,
-<<<<<<< HEAD
   "description": "Personal portfolio of Rafael Azzolini — a multilingual (PT/EN/ES/FR/DE) site built with Next.js 15, TypeScript and Tailwind CSS v4, featuring interactive canvas and three.js animations.",
   "author": "Rafael Azzolini",
   "license": "UNLICENSED",
@@ -17,8 +16,6 @@
     "app-router",
     "ssg"
   ],
-=======
->>>>>>> 2c76de3f3315f9d881ed6a20ee4fae28557c87fe
   "scripts": {
     "dev": "next dev",
     "build": "next build",
