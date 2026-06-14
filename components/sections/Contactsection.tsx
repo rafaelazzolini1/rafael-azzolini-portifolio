@@ -29,17 +29,16 @@ export function ContactSection({ contact }: { contact: Translation['contact'] })
         </a>
 
         <div className="flex justify-center gap-4 flex-wrap mt-10">
-          {CONTACT_LINKS.map(({ id, href, icon }) => {
+          {CONTACT_LINKS.map(({ id, href, icon, label: linkLabel }) => {
             const Icon = ICON_MAP[icon]
-            const label = id === 'resume'
-              ? contact.links.resume
-              : id.charAt(0).toUpperCase() + id.slice(1)
+            const label = id === 'resume' ? contact.links.resume : linkLabel
+            const external = href.startsWith('http') || href.endsWith('.pdf')
             return (
               <a
                 key={id}
                 href={href}
-                target={href.startsWith('http') ? '_blank' : undefined}
-                rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                target={external ? '_blank' : undefined}
+                rel={external ? 'noopener noreferrer' : undefined}
                 className="flex items-center gap-2 px-6 py-3.5 border border-ink/15 text-ink/80 text-sm font-mono tracking-wide hover:border-ink/50 hover:text-ink hover:-translate-y-1 transition-all duration-200"
               >
                 <Icon className="w-4 h-4 text-ink/70" />

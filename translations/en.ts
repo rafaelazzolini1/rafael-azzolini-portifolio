@@ -12,7 +12,7 @@ export const en: Translation = {
     badge: 'Available for opportunities',
     role: 'Full-Stack Developer',
     description:
-      'I build interfaces and systems using React, Next.js and TypeScript, automate processes with Python and always chase for measurable efficiency and code with purpose.',
+      'I build interfaces and systems using React, Next.js and TypeScript, automate processes with Python, and always pursue measurable efficiency and code with purpose.',
     ctaPrimary: 'View Projects',
     ctaSecondary: 'Get in Touch',
     stats: {
@@ -25,11 +25,11 @@ export const en: Translation = {
     sectionLabel: '01 — About Me',
     sectionTitle: 'Code with purpose, design with meaning',
     paragraph1:
-      "I'm a Computer Engineer with a dual degree (Brazil and the European Union), focused on full stack development with React, Next.js, and TypeScript. I enjoy turning business problems into products that generate value, from logic to performance.",
+      "I'm a Computer Engineer with a dual degree (Brazil and the European Union), focused on full-stack development with React, Next.js, and TypeScript. I enjoy turning business problems into products that generate value, from logic to performance.",
     paragraph2:
       "I have a track record of measurable efficiency: automations that cut material waste by 44% at PepsiCo, and a RAG AI agent that reduced operational demand by ~34%. I'm now expanding into AWS with Python and Go.",
     quote:
-      "I like a code that isn't just work but that also is understandable, and built to last and scale.",
+      "I like code that isn't just work but is also understandable, and built to last and scale.",
     infoCard: {
       title: 'Information',
       location: 'Location',
@@ -41,7 +41,7 @@ export const en: Translation = {
       availability: 'Availability',
       availabilityValue: 'Open to proposals',
       workModel: 'Work model',
-      workModelValue: 'Presential / Hybrid / Remote',
+      workModelValue: 'On-site / Hybrid / Remote',
     },
   },
   skills: {
@@ -57,8 +57,8 @@ export const en: Translation = {
       familiar: 'Familiar',
       learning: 'Learning',
     },
-    revealImage: 'Light up image',
-    dimImage: 'Dim image',
+    revealImage: 'Light up',
+    dimImage: 'Dim',
   },
   projects: {
     sectionLabel: '03 — Portfolio',
@@ -117,11 +117,11 @@ export const en: Translation = {
     sectionLabel: '05 — Contact',
     sectionTitle: "Let's talk?",
     description:
-      'I am open to new frontend opportunities, freelance projects, or just a good conversation about technology.',
+      'I am open to new full-stack opportunities, freelance projects, or just a good chat about technology.',
     links: { resume: 'Resume PDF' },
   },
   footer: {
-    tagline: 'Built by Rafael Azzolini and lots of coffees',
+    tagline: 'Built by Rafael Azzolini',
   },
   a11y: {
     skipToContent: 'Skip to content',

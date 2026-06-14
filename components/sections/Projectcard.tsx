@@ -13,6 +13,7 @@ export function ProjectCard({
   repoLabel = 'GitHub',
 }: ProjectCardProps) {
   const { number, title, description, emoji, tags, demoUrl, repoUrl } = project
+  const hasDemo = Boolean(demoUrl) && demoUrl !== '#'
 
   return (
     <article className="group h-full flex flex-col bg-ink/[0.02] border border-ink/10 overflow-hidden hover:border-ink/35 hover:-translate-y-1.5 transition-all duration-300">
@@ -26,15 +27,17 @@ export function ProjectCard({
         {/* Hover overlay with links */}
         <div className="absolute inset-0 bg-surface/85 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="flex gap-2">
-            <a
-              href={demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-ink text-surface text-[0.7rem] font-mono font-semibold tracking-wide uppercase hover:bg-ink/85 transition-colors"
-            >
-              {demoLabel}
-              <ArrowUpRightIcon className="w-3 h-3" />
-            </a>
+            {hasDemo && (
+              <a
+                href={demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-ink text-surface text-[0.7rem] font-mono font-semibold tracking-wide uppercase hover:bg-ink/85 transition-colors"
+              >
+                {demoLabel}
+                <ArrowUpRightIcon className="w-3 h-3" />
+              </a>
+            )}
             <a
               href={repoUrl}
               target="_blank"

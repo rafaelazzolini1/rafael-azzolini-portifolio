@@ -6,6 +6,7 @@ import { getDictionary, isLocale, locales } from '@/lib/i18n'
 import { Navbar } from '@/components/layouts/Navbar'
 import { Footer } from '@/components/layouts/Footer'
 import { BackToTop } from '@/components/ui/BackToTop'
+import { SmoothScroll } from '@/components/ui/SmoothScroll'
 import '@/app/globals.css'
 
 const jetbrainsMono = JetBrains_Mono({
@@ -37,7 +38,7 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(SITE_URL),
-    title: 'Rafael Azzolini | Frontend Developer',
+    title: 'Rafael Azzolini | Full-Stack Developer',
     description: t.hero.description,
     alternates: {
       canonical: `/${locale}`,
@@ -45,7 +46,7 @@ export async function generateMetadata({
     },
     openGraph: {
       type: 'website',
-      title: 'Rafael Azzolini | Frontend Developer',
+      title: 'Rafael Azzolini | Full-Stack Developer',
       description: t.hero.description,
       url: `/${locale}`,
       locale,
@@ -53,7 +54,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Rafael Azzolini | Frontend Developer',
+      title: 'Rafael Azzolini | Full-Stack Developer',
       description: t.hero.description,
     },
   }
@@ -84,6 +85,7 @@ export default async function LocaleLayout({
         <a href="#main" className="skip-link">
           {t.a11y.skipToContent}
         </a>
+        <SmoothScroll />
         <Navbar nav={t.nav} a11y={t.a11y} locale={locale} />
         {children}
         <Footer footer={t.footer} />

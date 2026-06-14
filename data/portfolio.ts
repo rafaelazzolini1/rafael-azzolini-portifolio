@@ -80,7 +80,7 @@ export const PROJECTS: Project[] = [
     emoji: '🕰️',
     theme: 'yellow',
     tags: ['Python', 'SQL', 'Automation'],
-    demoUrl: '#',
+    demoUrl: 'https://ponto-system.vercel.app/login',
     repoUrl: 'https://github.com/rafaelazzolini1/Ponto-System',
   },
   {
@@ -105,7 +105,7 @@ export const EXPERIENCES: Experience[] = [
   {
     id: 'exp-pepsico',
     type: 'work',
-    date: '2024',
+    date: 'Jan — Jul 2024',
     role: 'Estágio — Engenharia de Produto (R&D)',
     company: 'PepsiCo do Brasil · Sorocaba, SP',
     description: '',
@@ -141,7 +141,7 @@ export const EXPERIENCES: Experience[] = [
 export const CONTACT_LINKS: ContactLink[] = [
   { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/rafael-azzolini/', icon: 'linkedin' },
   { id: 'github', label: 'GitHub', href: 'https://github.com/rafaelazzolini1', icon: 'github' },
-  { id: 'resume', label: 'Currículo PDF', href: '#', icon: 'file' },
+  { id: 'resume', label: 'Currículo PDF', href: '/CV_Rafael_Azzolini.pdf', icon: 'file' },
 ]
 
 export const CONTACT_EMAIL = 'rafaazzolini@hotmail.com'

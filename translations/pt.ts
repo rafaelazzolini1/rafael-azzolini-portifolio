@@ -3,7 +3,7 @@ import type { Translation } from './types'
 export const pt: Translation = {
   nav: {
     about: 'Sobre',
-    skills: 'Skills',
+    skills: 'Habilidades',
     projects: 'Projetos',
     experience: 'Experiência',
     contact: 'Contato',
@@ -25,7 +25,7 @@ export const pt: Translation = {
     sectionLabel: '01 — Sobre Mim',
     sectionTitle: 'Código com propósito, design com significado',
     paragraph1:
-      'Sou Engenheiro da Computação com dupla titulação (Brasil e União Europeia), focado em desenvolvimento full stack com React, Next.js e TypeScript. Gosto de transformar problemas de negócio em produtos que geram valor, da lógica à performance.',
+      'Sou Engenheiro da Computação com dupla titulação (Brasil e União Europeia), focado em desenvolvimento full-stack com React, Next.js e TypeScript. Gosto de transformar problemas de negócio em produtos que geram valor, da lógica à performance.',
     paragraph2:
       'Tenho um histórico de eficiência mensurável: automações que reduziram o desperdício de material em 44% na PepsiCo e um agente de IA com RAG que reduziu a demanda operacional em ~34%. Atualmente estou expandindo para a AWS com Python e Go.',
     quote:
@@ -57,8 +57,8 @@ export const pt: Translation = {
       familiar: 'Familiarizado',
       learning: 'Aprendendo',
     },
-    revealImage: 'Iluminar imagem',
-    dimImage: 'Apagar imagem',
+    revealImage: 'Iluminar',
+    dimImage: 'Escurecer',
   },
   projects: {
     sectionLabel: '03 — Portfólio',
@@ -117,11 +117,11 @@ export const pt: Translation = {
     sectionLabel: '05 — Contato',
     sectionTitle: 'Vamos conversar?',
     description:
-      'Estou aberto a novas oportunidades como desenvolvedor frontend, projetos freelance ou uma boa conversa sobre tecnologia.',
+      'Estou aberto a novas oportunidades full-stack, projetos freelance ou apenas uma boa conversa sobre tecnologia.',
     links: { resume: 'Currículo PDF' },
   },
   footer: {
-    tagline: 'Built by Rafael Azzolini and lots of coffees',
+    tagline: 'Built by Rafael Azzolini',
   },
   a11y: {
     skipToContent: 'Pular para o conteúdo',

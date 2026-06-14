@@ -3,7 +3,7 @@ import type { Translation } from './types'
 export const es: Translation = {
   nav: {
     about: 'Sobre mí',
-    skills: 'Skills',
+    skills: 'Habilidades',
     projects: 'Proyectos',
     experience: 'Experiencia',
     contact: 'Contacto',
@@ -25,7 +25,7 @@ export const es: Translation = {
     sectionLabel: '01 — Sobre mí',
     sectionTitle: 'Código con propósito, diseño con significado',
     paragraph1:
-      'Soy Ingeniero Informático con doble titulación (Brasil y Unión Europea), enfocado en el desarrollo full stack con React, Next.js y TypeScript. Me gusta convertir problemas de negocio en productos que generan valor, de la lógica al rendimiento.',
+      'Soy Ingeniero Informático con doble titulación (Brasil y Unión Europea), enfocado en el desarrollo full-stack con React, Next.js y TypeScript. Me gusta convertir problemas de negocio en productos que generan valor, de la lógica al rendimiento.',
     paragraph2:
       'Tengo un historial de eficiencia medible: automatizaciones que redujeron un 44% el desperdicio de material en PepsiCo y un agente de IA con RAG que redujo la demanda operativa en ~34%. Actualmente me estoy expandiendo a AWS con Python y Go.',
     quote:
@@ -57,8 +57,8 @@ export const es: Translation = {
       familiar: 'Familiarizado',
       learning: 'Aprendiendo',
     },
-    revealImage: 'Iluminar imagen',
-    dimImage: 'Atenuar imagen',
+    revealImage: 'Iluminar',
+    dimImage: 'Atenuar',
   },
   projects: {
     sectionLabel: '03 — Portafolio',
@@ -117,11 +117,11 @@ export const es: Translation = {
     sectionLabel: '05 — Contacto',
     sectionTitle: '¿Hablamos?',
     description:
-      'Estoy abierto a nuevas oportunidades como desarrollador frontend, proyectos freelance o una buena conversación sobre tecnología.',
+      'Estoy abierto a nuevas oportunidades full-stack, proyectos freelance o simplemente una buena charla sobre tecnología.',
     links: { resume: 'Currículum PDF' },
   },
   footer: {
-    tagline: 'Built by Rafael Azzolini and lots of coffees',
+    tagline: 'Built by Rafael Azzolini',
   },
   a11y: {
     skipToContent: 'Saltar al contenido',

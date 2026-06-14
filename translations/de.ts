@@ -57,8 +57,8 @@ export const de: Translation = {
       familiar: 'Vertraut',
       learning: 'Im Lernen',
     },
-    revealImage: 'Bild ausleuchten',
-    dimImage: 'Bild abdunkeln',
+    revealImage: 'Ausleuchten',
+    dimImage: 'Abdunkeln',
   },
   projects: {
     sectionLabel: '03 — Portfolio',
@@ -117,11 +117,11 @@ export const de: Translation = {
     sectionLabel: '05 — Kontakt',
     sectionTitle: 'Sprechen wir?',
     description:
-      'Ich bin offen für neue Frontend-Möglichkeiten, Freelance-Projekte oder einfach ein gutes Gespräch über Technologie.',
+      'Ich bin offen für neue Full-Stack-Möglichkeiten, Freelance-Projekte oder einfach ein gutes Gespräch über Technologie.',
     links: { resume: 'Lebenslauf PDF' },
   },
   footer: {
-    tagline: 'Built by Rafael Azzolini and lots of coffees',
+    tagline: 'Built by Rafael Azzolini',
   },
   a11y: {
     skipToContent: 'Zum Inhalt springen',

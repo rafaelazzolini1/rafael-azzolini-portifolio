@@ -25,7 +25,7 @@ export const fr: Translation = {
     sectionLabel: '01 — À propos',
     sectionTitle: 'Du code avec un but, un design avec du sens',
     paragraph1:
-      'Je suis ingénieur en informatique avec un double diplôme (Brésil et Union européenne), spécialisé dans le développement full stack avec React, Next.js et TypeScript. J\'aime transformer des problèmes métier en produits qui créent de la valeur, de la logique à la performance.',
+      'Je suis ingénieur en informatique avec un double diplôme (Brésil et Union européenne), spécialisé dans le développement full-stack avec React, Next.js et TypeScript. J\'aime transformer des problèmes métier en produits qui créent de la valeur, de la logique à la performance.',
     paragraph2:
       'J\'ai un historique d\'efficacité mesurable : des automatisations qui ont réduit de 44 % le gaspillage de matériaux chez PepsiCo, et un agent IA avec RAG qui a réduit la demande opérationnelle d\'environ 34 %. Je m\'oriente désormais vers AWS avec Python et Go.',
     quote:
@@ -57,8 +57,8 @@ export const fr: Translation = {
       familiar: 'Familier',
       learning: 'En apprentissage',
     },
-    revealImage: 'Éclairer l\'image',
-    dimImage: 'Assombrir l\'image',
+    revealImage: 'Éclairer',
+    dimImage: 'Assombrir',
   },
   projects: {
     sectionLabel: '03 — Portfolio',
@@ -117,11 +117,11 @@ export const fr: Translation = {
     sectionLabel: '05 — Contact',
     sectionTitle: 'On discute ?',
     description:
-      'Je suis ouvert à de nouvelles opportunités en frontend, des projets freelance ou simplement une bonne conversation sur la technologie.',
+      'Je suis ouvert à de nouvelles opportunités full-stack, des projets freelance ou simplement une bonne discussion sur la technologie.',
     links: { resume: 'CV PDF' },
   },
   footer: {
-    tagline: 'Built by Rafael Azzolini and lots of coffees',
+    tagline: 'Built by Rafael Azzolini',
   },
   a11y: {
     skipToContent: 'Aller au contenu',
