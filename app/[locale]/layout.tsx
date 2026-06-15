@@ -23,7 +23,15 @@ export function generateStaticParams() {
 // 404 on any locale outside the supported set.
 export const dynamicParams = false
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
+// Absolute base for canonical / hreflang / OpenGraph URLs.
+// Priority: explicit NEXT_PUBLIC_SITE_URL → Vercel's stable production domain
+// (auto-injected) → localhost for local dev. This guarantees we never ship
+// localhost canonicals even if the env var is forgotten in production.
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : 'http://localhost:3000')
 
 export async function generateMetadata({
   params,
@@ -34,7 +42,11 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {}
 
   const t = getDictionary(locale)
-  const languageAlternates = Object.fromEntries(locales.map((l) => [l, `/${l}`]))
+  const languageAlternates = {
+    ...Object.fromEntries(locales.map((l) => [l, `/${l}`])),
+    // Fallback for users whose language isn't covered; root redirects to a locale.
+    'x-default': '/',
+  }
 
   return {
     metadataBase: new URL(SITE_URL),
